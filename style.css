@@ -196,9 +196,9 @@ summary {
 
 @keyframes run-across {
   from {
-    left: -80px;
+    left: 100px;
   }
   to {
-    left: 100vw;
+    left: -80vw;
   }
 }
