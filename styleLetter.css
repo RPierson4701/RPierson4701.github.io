@@ -1,0 +1,74 @@
+body {
+  font-family: "Times New Roman", Times, sans-serif;
+  background-color: lightgray;
+  color: black;
+}
+header > img {
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  margin: 25px 0px 10px 0px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 17;
+}
+
+.senderInformation > p {
+  font-style: italic;
+  text-align: right;
+  margin-top: -5px;
+}
+
+#addTopMargin {
+  margin-top: 40px;
+}
+
+article { 
+  height: 950px;
+  width: 650px;
+  padding: 20px 60px;
+  border: solid darkgray;
+  background: white;
+  justify-content: center;
+  
+  margin: 40px auto;
+}
+
+.receiveInformation > p {
+  font-style: italic;
+  text-align: left;
+  margin-top: -5px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.indent {
+  padding-left: 35px;
+  text-indent: -35px;
+}
+
+footer {
+  height: 40px;
+  font-size: 14px;
+  padding: 50px 0px 0px 28px;
+}
+
+#closer {
+  margin: 20px 0px;
+}
+
+
+hr {
+  border-top: 2px dashed darkgray;
+  text-align: center;
+  background-color: lightgray;
+  width: 775px;
+}
