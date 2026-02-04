@@ -114,3 +114,8 @@ summary {
   font-size: 18px;
   
 }
+
+nav:hover {
+  background-color: rgb(0, 80, 0);
+  transition-timing-function: ease;
+}
