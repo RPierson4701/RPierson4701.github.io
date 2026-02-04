@@ -116,6 +116,5 @@ summary {
 }
 
 nav:hover {
-  background-color: rgb(0, 80, 0);
-  transition-timing-function: ease;
+  background-color: rgb(45, 98, 46)
 }
