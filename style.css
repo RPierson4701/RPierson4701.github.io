@@ -120,3 +120,34 @@ summary {
   background-color: rgb(0, 40, 40);
   border-radius: 15px;
 }
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+.slide-left {
+	-webkit-animation: slide-left 0.5s ease-in both;
+	        animation: slide-left 0.5s ease-in both;
+}
