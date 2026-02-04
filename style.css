@@ -185,7 +185,7 @@ summary {
             transform: scale(1);
   }
   100% {
-    -webkit-transform: scale(3;
+    -webkit-transform: scale(3);
             transform: scale(3);
   }
 }
