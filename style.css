@@ -183,3 +183,22 @@ summary {
             transform: scale(1);
   }
 }
+
+.running-cat {
+  position: fixed;
+  bottom: 20px;
+  left: -80px;
+  font-size: 48px;
+  pointer-events: none;
+  animation: run-across 2s linear forwards;
+  z-index: 9999;
+}
+
+@keyframes run-across {
+  from {
+    left: -80px;
+  }
+  to {
+    left: 100vw;
+  }
+}
