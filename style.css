@@ -174,9 +174,21 @@ summary {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  100% {
+  25% {
     -webkit-transform: scale(2);
             transform: scale(2);
+  }
+  50% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  75% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes scale-up-center {
@@ -184,8 +196,20 @@ summary {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-  100% {
+  25% {
     -webkit-transform: scale(2);
             transform: scale(2);
+  }
+  50% {
+    -webkit-transform: scale(2.5);
+            transform: scale(2.5);
+  }
+  75% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
