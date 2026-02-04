@@ -155,6 +155,7 @@ summary {
 .scale-up-center:hover {
 	-webkit-animation: scale-up-center 0.4s ease-in both;
 	        animation: scale-up-center 0.4s ease-in both;
+          animation-iteration-count: infinite;
 }
 
 /* ----------------------------------------------
