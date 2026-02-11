@@ -63,6 +63,10 @@
         nav {
             display: flex;
             background-color: #333;
+            justify-content: space-around;
+            align-items: center;
+            color: whitesmoke;
+            padding: 10px;
 
             a {
                 color: white;
@@ -73,17 +77,37 @@
                 background-color: #999;
             }
 
-            ul {
+            .nav-links {
                 list-style-type: none;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-            }
-            @media (max-width: 600px){
-
+                flex: 1;
             }
         }
 
+        head, main {
+            @media (max-width: 600px) {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                
+                .site_nav {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .nav-links {
+                    padding: 15px;
+                    flex-direction: column;
+                    height: 100vh;
+                    width: 10vw;
+                }
+
+            }
+        }
+        
         .logo {
             font-size: 24px;
         }
@@ -91,26 +115,28 @@
 </head>
 
 <body>
-    <header>
-        <nav class="site-nav">
-            <div class="logo">MySite</div>
-            <ul class="nav-links">
-                <li><a href="myflex.html">Flex</a></li>
-                <li><a href="layout.html">Layout</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <h1>FlexBox practice</h1>
-    </header>
-    <main>
-        <section class="flex-container">
-            <div class="flex-item red">1</div>
-            <div class="flex-item blue">2</div>
-            <div class="flex-item green">3</div>
-            <div class="flex-item orange">4</div>
-            <div class="flex-item purple">5</div>
-        </section>
-    </main>
+    <div class="rearrange">
+        <header>
+            <nav class="site-nav">
+                <div class="logo">MySite</div>
+                <ul class="nav-links">
+                    <li><a href="myflex.html">Flex</a></li>
+                    <li><a href="layout.html">Layout</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>FlexBox practice</h1>
+            <section class="flex-container">
+                <div class="flex-item red">1</div>
+                <div class="flex-item blue">2</div>
+                <div class="flex-item green">3</div>
+                <div class="flex-item orange">4</div>
+                <div class="flex-item purple">5</div>
+            </section>
+        </main>
+    </div>
     <footer>
         <p>Do we need this?</p>
     </footer>
