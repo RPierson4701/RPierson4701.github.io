@@ -35,9 +35,11 @@
             align-items: center;
             justify-content: center;
             display: flex;
+
             @media (min-width: 600px) {
                 color: gray;
             }
+
             @media (min-width: 900px) {
                 color: purple;
             }
@@ -52,6 +54,7 @@
             @media (min-width: 600px) {
                 flex-direction: row;
             }
+
             @media (min-width: 900px) {
                 justify-content: center;
             }
@@ -61,6 +64,14 @@
 
 <body>
     <header>
+        <nav class="site-nav">
+            <div class="logo">MySite</div>
+            <ul class="nav-links">
+                <li><a href="myflex.html">Flex</a></li>
+                <li><a href="layout.html">Layout</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
         <h1>FlexBox practice</h1>
     </header>
     <main>
