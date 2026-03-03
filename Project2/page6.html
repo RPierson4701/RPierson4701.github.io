@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Showdown</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <section class="container">
+        <h1>The Final Showdown</h1>
+        <p>After a long journey filled with trials and challenges, you finally stand before Malakar's lair. The dark
+            sorcerer awaits, the Crystal of Wisdom in his grasp. It's time to make your move.</p>
+        <!-- Your Code -->
+         <fieldset>
+            <legend>How will you confront Malakar?</legend>
+            <label for = "confrontOption">Choose wisely:</label>
+            <select>
+                <option>--Please choose an option--</option>
+                <option>Option A</option>
+                <option>Option B</option>
+                <option>Option C</option>
+            </select>
+         </fieldset>
+         <fieldset>
+            <legend>Character Information</legend>
+            <fieldset>
+                <legend>The Brave</legend>
+                <label for = "name">Your Name: </label>
+                <input type = "text" id = "name">
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Weapon:</legend>
+                <input type = "radio" id = "sword" name = "weapons">
+                <label id = "sword">Sword</label>
+                <input type = "radio" id = "bow" name = "weapons">
+                <label id = "bow">Bow</label>
+                <input type = "radio" id = "staff" name = "weapons">
+                <label id = "staff">Staff</label>
+            </fieldset>
+            <fieldset>
+                <legend>Select Your Armor:</legend>
+                <input type = "checkbox" id = "plateArmor">
+                <label for = "plateArmor">Plate Armor</label>
+                <input type = "checkbox" id = "leatherArmor">
+                <label for = "leatherArmor">Leather Armor</label>
+                <input type = "checkbox" id = "cloak">
+                <label for = "cloak">Cloak</label>
+            </fieldset>
+            <label for ="malakarMessage">Leave a Message for Malakar:</label>
+            <input type = "text" id = "malakarMessage" style = "width: 80%; height: 100px;"
+         </fieldset>
+         <input type = "submit" value = "Face Malakar" onclick = "window.location.href = 'page7.html'">
+        <p>Your choice here will determine the fate of the kingdom. Choose wisely.</p>
+    </section>
+</body>
+
+</html>

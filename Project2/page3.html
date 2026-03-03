@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Quest Begins</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <section class="container">
+        <form id="characterForm" type="get" action="page4.html">
+            <h1>Pack Your Bag</h1>
+            <p>Select the supplies you wish to take on your quest. Choose wisely, as you can only carry a limited
+                amount.</p>
+            <fieldset class  ="supplies">
+                <legend>Choose Your Provisions</legend>
+                <fieldset>
+                    <input type="checkbox" id="food" name="pickChar" value="food">
+                    <label for="food"><strong>Food:</strong> Essential for Energy.</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="water" name="pickChar" value="water">
+                    <label for="water"><strong>Water:</strong> Hydration is key!</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="potions" value="potions">
+                    <label for="potions"><strong>Magin Potions:</strong> For health and magical energy.</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="maps" value="Maps">
+                    <label for="maps"><strong>Maps:</strong> Don't get lost in the wilderness!</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="sword" value="sword">
+                    <label for="sword"><strong>Sword:</strong> Fend off those pesky foes!</label>
+                </fieldset>
+                <p>Think carefully - what would you need on your journey?</p>
+            </fieldset>
+            <input type="submit" value="Continue">
+        </form>
+    </section>
+</body>
+
+</html>

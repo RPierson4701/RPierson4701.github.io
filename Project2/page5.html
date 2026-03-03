@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey Continues</title>
+    <link href = "style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    <section class="container">
+        <h1>The Journey Continues</h1>
+        <p>With the guardian's riddle behind you, the path forward splits into three. Each route is known to favor certain traits: strength, wisdom, or stealth. Choose your path wisely, as it will influence the challenges you face ahead.</p>
+        <form id = "pageChange" type="get" action="page6.html">
+            <label for = "">Choose your path:</label>
+            <select id = "pathChoice" name = "pathChoice">
+                <option id = "optionDefault">--Please choose an option--</option>
+                <option id = "optionA"><Strong>The Path of Strength</Strong></option>
+                <option id = "optionB"><Strong>The Path of Wisdom</Strong></option>
+                <option id = "optionC"><Strong>The Path of Stealth</Strong></option>
+                <input type = "submit" value = "Continue on Your Journey" id = "submitButton" disabled>
+            </select>
+        </form>
+        <p>Your choice will not only test your abilities but also reveal deeper truths about your character.</p>
+    </section>
+    <script>
+        let defaultOption = document.querySelector("#optionDefault").value;
+        let strength = document.querySelector("#optionA").value;
+        let wisdom = document.querySelector("#optionB").value;
+        let stealth = document.querySelector("#optionC").value;
+
+        const formDetails = document.querySelector("#pageChange")
+        const dropdownChoice = document.querySelector("#pathChoice");
+        const submit = document.querySelector("#submitButton")
+
+        function optionChoice(selectedOption){
+            if (selectedOption === stealth){
+                formDetails.action = "page5b.html"
+                document.body.style.backgroundColor = "grey";
+                document.body.style.color = "black";
+            }
+
+            else if (selectedOption === wisdom){
+                document.body.style.backgroundColor = "red";
+                document.body.style.color = "white";
+            }
+
+            else if (selectedOption === strength){
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }
+            else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+
+            if (selectedOption === defaultOption){
+                submit.setAttribute('disabled', 'disabled');
+            }
+            else {
+                submit.removeAttribute('disabled');
+            }
+        }
+
+        dropdownChoice.addEventListener("click", function() {
+            optionChoice(dropdownChoice.value)
+        });
+
+    </script>
+</body>
+</html>
