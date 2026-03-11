@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval Classwork</title>
+    <link href="https://cdn.jsdelivr.net" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href = "style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body class = "container">
+    <fieldset>
+        <legend><h3>My Current Count</h3></legend>
+        <p id = "count">0 Seconds</p>
+        <button id = "startStop">Start</button>
+    </fieldset>
+
+</body>
+    <script src="https://cdn.jsdelivr.net" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function hello() {
+            console.log("hello from the other siiiide!");
+        }
+
+        setTimeout(hello, 3000);
+
+        const count = document.querySelector("#count");
+        const reset = document.querySelector("#startStop")
+
+        let number = 0;
+
+        let unit = " Seconds"
+
+        let timer;
+
+        function stopwatch() {
+
+            timer ??= setInterval(increaseTime, 1000);
+            reset.textContent = "Reset";
+
+        }
+
+        function increaseTime(){
+            number += 1;
+            if (number / 60 >= 1 && unit === " Seconds"){
+                unit = " Minutes";
+            }
+            if (unit === " Minutes"){
+                count.textContent = (number/60).toFixed(2) + unit;
+            }
+            else {
+                count.textContent = number + unit;
+            }
+        }
+
+        function resetTimer(){
+
+            clearInterval(timer);
+            number = 0;
+            unit = " Seconds";
+            count.textContent = number + unit;
+            timer = null;
+            reset.textContent = "Start";
+
+        }
+
+        reset.addEventListener("click", checkStartStop);
+
+        function checkStartStop(){
+            if (reset.textContent == "Reset"){
+                resetTimer();
+            }
+            else {
+                stopwatch();
+            }
+        }
+        
+        setInterval(hello, 1000);
+
+    </script>
+</html>
