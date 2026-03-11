@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Selection</title>
+    <link href="style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <form id = "sienaForm" type="get" action="page4.html">
+        <label for = "sienaEmail">Siena College Email: </label>
+        <input type = "text" id = "sienaEmail" placeholder = "Enter your Siena email" required pattern = ".+@siena\.edu" title = "Siena Emails must end with @siena.edu">
+        <label for = "sienaID">Siena ID: </label>
+        <input type = "text" id = "sienaID" placeholder = "Enter your Siena ID" required pattern = "902\d{6}" title = "Siena ID must be nine digits, starting with 902">
+        <input type="submit" value="Submit">
+    </form>
+    <script src = "script.js" defer></script>
+</body>
+
+</html>
