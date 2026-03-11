@@ -1,5 +1,5 @@
 document.getElementById("sienaForm").addEventListener("submit", function (e) {
-    //e.preventDefault(); // Stop the form from submitting automatically
+    e.preventDefault(); // Stop the form from submitting automatically
     
     // Get form values
     const email = document.getElementById("sienaEmail").value;
