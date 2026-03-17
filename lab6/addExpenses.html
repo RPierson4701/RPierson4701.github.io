@@ -12,12 +12,12 @@
 
 <body>
     <main class="container">
-        <form id="expensesForm" type="get" action="addExpenses.html">
+        <form id="expensesForm" type="get">
             <fieldset>
             <legend><h2>Add Expenses</h2></legend>
             <div class="row align-items-center mb-3">
                 <label for="expenseSource" class="form-label">Expense Source Name: </label>
-                <input class = "form-control" type="text" id="expenseSource" required pattern="[.{5,}]">
+                <input class = "form-control" type="text" id="expenseSource" required pattern=".{5,}">
             </div>
             <div class="row align-items-center mb-3">
                 <label for="expenseDate" class="form-label">Expense Date: </label>
@@ -30,7 +30,23 @@
             </div>
             <div class="row align-items-center mb-3">
                 <label for="expenseCategory" class="form-label">Expense Category: </label>
-                <input class = "form-control" type="text" id="expenseCategory">
+                <fieldset>
+                    <input type="checkbox" id="categoryA" name = "expenseCategory" value = "gas">
+                    <label for="categoryA"><strong>Gas:</strong> Necessary for movement.</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="categoryC" name = "expenseCategory" value = "shelter">
+                    <label for="categoryC"><strong>Rent:</strong> Shelter is good.</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="categoryD" name = "expenseCategory" value = "fun">
+                    <label for="categoryD"><strong>Fun:</strong> Anything frivolous.</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="categoryB" name="expenseCategory" value="food">
+                    <label for="categoryB"><strong>Food:</strong> Essential for Energy.</label>
+                </fieldset>
+           
             </div>
             <div class="row align-items-center mb-3">
                 <label for="paymentMode" class="form-label">Mode of Payment: </label>
@@ -41,8 +57,8 @@
                 </select>
             </div>
             <div class="row align-items-center mb-3">
-                <label for="rational" class="form-label">Expense Source Name: </label>
-                <input class = "form-control" type="text" id="rational" pattern="[.{0,100}]">
+                <label for="rational" class="form-label">Rational: </label>
+                <input class = "form-control" type="text" id="rational" pattern=".{0,100}">
             </div>
             <div class = "row align-items-center">
                 <input type="submit" value="Submit" class="btn btn-primary">

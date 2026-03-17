@@ -3,10 +3,10 @@
 3. We can use required pattern within the input tag to validate the input before submitting. 
 4. Instead of a white popup bubble below the input field, on my iPhone, it appears as a black bubble above the field. This might relate to my phone preferences being set to dark mode. Also, the submit button on my phone appears to be blue and rounded, unlike what I see on my windows browser. 
 
-Siena Form: https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/sienaForm.html
+Siena Form: https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/lab6/sienaForm.html
 
-Finance Page: https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/pageFinance.html
+Finance Page: https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/lab6/pageFinance.html
 
-Expense Page: https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/addExpenses.html
+Expense Page: https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/lab6/addExpenses.html
 
-Stop Watch (I turned it into one button instead of two for Start/Reset): https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/Post-Project2/stopWatchExercise
+Stop Watch (I turned it into one button instead of two for Start/Reset): https://fluffy-space-capybara-v66r99v7p5xhx7x6-5500.app.github.dev/lab6/stopWatchExercise
