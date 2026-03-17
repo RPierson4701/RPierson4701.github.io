@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate and Style 1 through 100</title>
+    <style>
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            width: 600px;
+            gap: 4px;
+        }
+
+        .wrapper div {
+            width: 80px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+    </main>
+    <script>
+
+        let divTag = document.createElement("div");
+        divTag.classList.add("wrapper");
+
+        for (i = 1; i <=100; i++){
+            let flex = document.createElement("div");
+            let content = document.createElement("p");
+            content.textContent = i;
+
+            flex.appendChild(content);
+
+            let prime = true;
+            if (i > 2){
+                for (j = 2; j <= i/2; j++){
+                    if (i % j == 0){
+                        prime = false;
+                    }
+                }
+            }
+
+            if (prime && i % 2 != 0 ){
+                flex.style.backgroundColor = 'red';
+            }
+            else if (i % 2 == 0 ){
+                flex.style.backgroundColor = 'green';
+            }
+            else {
+                flex.style.backgroundColor = 'yellow';
+            }
+
+            divTag.appendChild(flex);
+        }
+
+        document.body.appendChild(divTag);
+
+
+
+
+    </script>
+</body>
+
+</html>
