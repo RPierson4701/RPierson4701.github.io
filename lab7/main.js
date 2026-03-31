@@ -67,3 +67,44 @@ function fetchMeal() {
 }
 
 init();
+
+function handleErrorJoke(err) {
+  console.error("Something went wrong:", err);
+  document.getElementById("joke-output").textContent =
+    "Sorry, we lost our funny bone! (Error loading joke)";
+}
+
+function fetchJoke(){
+  let url = "https://official-joke-api.appspot.com/random_joke";
+  fetch(url)
+    .then(statusCheck)
+    .then(resp => resp.json())
+    .then(showJoke)
+    .catch(handleErrorJoke);
+}
+
+const jokeLocation = document.getElementById("joke-output")
+
+function showJoke(data) {
+  let punchline = data.punchline;
+  let setup = data.setup;
+
+  appendJokePart(setup);
+  setTimeout(appendJokePart, 3000, punchline);
+
+  setTimeout(removeJoke, 12000)
+
+}
+
+function appendJokePart(toAppend){
+  let newJokePiece = document.createElement("p");
+  newJokePiece.textContent = toAppend;
+
+  jokeLocation.append(newJokePiece);
+}
+
+function removeJoke(){
+  jokeLocation.innerHTML = '';
+}
+
+document.getElementById("joke-btn").addEventListener("click", fetchJoke);
